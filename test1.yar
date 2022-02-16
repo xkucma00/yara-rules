@@ -1,0 +1,5 @@
+
+rule A {
+  condition:
+      true
+}
