@@ -1,5 +1,5 @@
 
 rule A {
   condition:
-      true
+      false or false
 }
