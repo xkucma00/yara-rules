@@ -1,5 +1,10 @@
 
+rule KK {
+  condition:
+    true
+}
+
 rule A {
   condition:
-      true or false
+      true or false or KK
 }
