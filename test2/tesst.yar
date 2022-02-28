@@ -10,5 +10,5 @@ rule ahoj : test {
   strings:
     $s0 = "water"
   condition:
-    $s0 or ($s0 and true) or A or false
+    $s0 or ($s0 and true) or A or false or (B and false)
 }
