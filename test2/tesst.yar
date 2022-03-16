@@ -2,7 +2,7 @@ include "../test1.yar"
 import "pe"
 
 rule B {
-  metas:
+  meta:
     happy = false
   condition:
     true or false or pe.number_of_sections == 2
