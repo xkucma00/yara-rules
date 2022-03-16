@@ -1,7 +1,7 @@
 
 rule KK {
   condition:
-    true or false
+    true or false or true
 }
 
 rule A {
