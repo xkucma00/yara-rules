@@ -3,12 +3,15 @@ import "pe"
 
 rule B {
   meta:
-    happy = false
+    new_meta = "new"
   condition:
     true or false or pe.number_of_sections != 2 or false
 }
 
 rule ahoj : test {
+  meta: 
+    also_new = true
+    which = 2
   strings:
     $s0 = "water"
   condition:
