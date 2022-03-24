@@ -8,7 +8,7 @@ rule B {
     true or false or pe.number_of_sections != 2 or false
 }
 
-rule ahoj : test {
+global private rule ahoj : test {
   meta: 
     also_new = true
     which = 2
