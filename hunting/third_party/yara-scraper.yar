@@ -18,7 +18,7 @@ rule KK__33
 		false
 }
 
-rule A__34
+rule A__37
 {
 	meta:
 		author = "https://github.com/xkucma00/yara-rules.git"
@@ -29,13 +29,14 @@ rule A__34
 		original_name = "A"
 		original_path = "test1.yar"
 		source_id = 4
-		id = 34
-		predecessor_id = false
-		oldest_ancestor_id = false
+		id = 37
+		predecessor_id = 34
+		oldest_ancestor_id = 34
 	condition:
 		true or
 		false or
-		KK__33
+		KK__33 or
+		true
 }
 
 rule B__35
@@ -60,7 +61,7 @@ rule B__35
 		false
 }
 
-global rule ahoj__36 : test
+global rule ahoj__38 : test
 {
 	meta:
 		__also_new = true
@@ -73,9 +74,9 @@ global rule ahoj__36 : test
 		original_name = "ahoj"
 		original_path = "test2/tesst.yar"
 		source_id = 4
-		id = 36
-		predecessor_id = false
-		oldest_ancestor_id = false
+		id = 38
+		predecessor_id = 36
+		oldest_ancestor_id = 36
 	strings:
 		$s0 = "water"
 	condition:
@@ -84,7 +85,7 @@ global rule ahoj__36 : test
 			$s0 and
 			true
 		) or
-		A__34 or
+		A__37 or
 		false or
 		(
 			B__35 and
