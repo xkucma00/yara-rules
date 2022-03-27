@@ -6,5 +6,5 @@ rule KK {
 
 rule A {
   condition:
-      true or false or KK
+      true or false or KK or false
 }
