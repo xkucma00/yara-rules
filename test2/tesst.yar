@@ -5,7 +5,7 @@ rule B {
   meta:
     new_meta = "new"
   condition:
-    true or false or pe.number_of_sections != 2 or false or false
+    true or false or pe.number_of_sections != 2
 }
 
 global
@@ -16,5 +16,5 @@ private rule ahoj : test {
   strings:
     $s0 = "water"
   condition:
-    $s0 or ($s0 and true) or A or false or (B and false) or false
+    $s0 or ($s0 and true) or A or false or (B and false)
 }
