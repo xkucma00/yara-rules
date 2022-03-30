@@ -5,7 +5,7 @@ rule B {
   meta:
     new_meta = "new"
   condition:
-    true or false or pe.number_of_sections != 2 or false
+    true or false or pe.number_of_sections != 2 or false or false
 }
 
 global
